@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* ====================
+  Reset Default CSS Start
+  ==================== */
+
+:root {
+  --primary-color: #00215e;
+  --black: #000000;
+  --white: #ffffff;
+  --primary-font: "Sora";
+  --secondary-font: "Rubik";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+  margin-top: 0;
+}
+
+p {
+  font-family: var(--secondary-font);
+  margin-top: 0;
+}
+
+span {
+  font-family: var(--secondary-font);
+}
+
+a {
+  text-decoration: none !important;
+  font-family: var(--secondary-font);
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  font-family: var(--secondary-font);
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: var(--secondary-font);
+}
+
+input {
+  outline: none;
+  font-family: var(--secondary-font);
+}
+
+label {
+  font-family: var(--secondary-font);
+}
+
+/* ====================
+Reset Default CSS End
+==================== */
