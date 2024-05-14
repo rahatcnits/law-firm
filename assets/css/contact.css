@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* ====================
+  Reset Default CSS Start
+  ==================== */
+
+:root {
+  --primary-color: #00215e;
+  --black: #000000;
+  --white: #ffffff;
+  --primary-font: "Sora";
+  --secondary-font: "Rubik";
+  --text-color: #f4cf6e;
+  --input-border: #c9c9c9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+  margin-top: 0;
+}
+
+p {
+  font-family: var(--secondary-font);
+  margin-top: 0;
+}
+
+span {
+  font-family: var(--secondary-font);
+}
+
+a {
+  text-decoration: none !important;
+  font-family: var(--secondary-font);
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  font-family: var(--secondary-font);
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: var(--secondary-font);
+}
+
+input {
+  outline: none;
+  font-family: var(--secondary-font);
+}
+
+label {
+  font-family: var(--secondary-font);
+}
+
+/* ====================
+Reset Default CSS End
+==================== */
+
+/* Navbar Start */
+
+.navbar_wrapper {
+  background: var(--black);
+}
+
+/* Navbar End */
+
+/* Hero Start */
+#contact_hero {
+  background: url(../img/contact_hero_bg.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.contact_page_ifo {
+  display: flex;
+  justify-content: center;
+  padding-top: 15vh;
+  align-items: center;
+  color: var(--white);
+}
+
+.contact_page_ifo span a {
+  font-size: 16px;
+  color: var(--white);
+}
+
+.contact_hero_heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.contact_hero_heading h1 {
+  font-size: 35px;
+  color: var(--white);
+}
+/* Hero End */
+
+/* contact_ Info Start */
+
+#contact_info {
+  padding: 50px 0;
+}
+
+.contact_info_touch {
+  margin-top: 130px;
+}
+
+.contact_info_touch_heading h1 {
+  font-size: 32px;
+  color: var(--black);
+  padding-bottom: 10px;
+}
+
+.contact_info_touch_heading p {
+  font-size: 16px;
+  color: var(--black);
+}
+
+.contact_info_touch_items {
+  margin-bottom: 20px;
+}
+
+.contact_info_touch_items h1 {
+  font-size: 20px;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.contact_info_touch_items a {
+  font-size: 16px;
+  color: var(--black) !important;
+}
+
+.contact_form {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  padding: 40px 50px;
+}
+
+.contact_form_heading h1 {
+  text-align: center;
+  font-size: 30px;
+  color: var(--black);
+  padding-bottom: 15px;
+}
+
+.contact_form_heading p {
+  font-size: 15px;
+  text-align: center;
+  color: var(--black);
+}
+
+.contact_form_items label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.contact_form_items input {
+  width: 100%;
+  padding: 5px 5px;
+  border-radius: 3px;
+  border: 1px solid var(--input-border);
+  font-size: 15px;
+}
+
+.contact_form_items input:focus {
+  border: 1px solid var(--primary-color);
+}
+
+.contact_form_items textarea {
+  width: 100%;
+  border: 1px solid var(--input-border);
+  padding: 5px 5px;
+  border-radius: 3px;
+  outline: none;
+  aspect-ratio: 3/1;
+}
+
+.contact_form_items textarea:focus {
+  border: 1px solid var(--primary-color);
+}
+
+.contact_form_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact_form_button button {
+  border: 1px solid var(--primary-color);
+  padding: 6px 20px;
+  border-radius: 6px;
+  background: var(--primary-color);
+  color: var(--white);
+  font-size: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .contact_form {
+    margin-top: 30px;
+  }
+
+  .contact_info_touch {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .contact_form_heading h1 {
+    font-size: 23px;
+  }
+
+  .contact_form {
+    padding: 30px 20px;
+  }
+
+  .contact_info_touch_heading h1 {
+    font-size: 27px;
+  }
+}
+/* contact_ Info End */
+
+/* Location Start */
+#location {
+  padding: 50px 0 70px 0;
+}
+
+.location_wrapper {
+  border: 1px solid var(--input-border);
+  width: 100%;
+  aspect-ratio: 3/1;
+  padding: 40px 60px;
+  border-radius: 10px;
+}
+
+.location_content_heading h1 {
+  font-size: 28px;
+  color: var(--black);
+}
+
+.location_content_headings h1 {
+  font-size: 28px;
+  color: var(--black);
+}
+
+.location_content {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.location_content img {
+  width: 30px;
+}
+
+.location_content span {
+  font-size: 16px;
+  color: var(--black);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+  .location_content_headings {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .location_wrapper {
+    padding: 30px 20px;
+  }
+
+  .location_content_headings h1 {
+    font-size: 25px;
+  }
+
+  .location_content_heading h1 {
+    font-size: 25px;
+  }
+
+  .location_content span {
+    font-size: 14px;
+  }
+}
+/* Location End */
+
+.map_wrapper iframe {
+  padding: 0;
+  margin: -5px;
+}
+
+/* Newsletter Start */
+
+#newsletter {
+  background: url(../img/newsletter_01.svg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 50vh;
+  background-repeat: no-repeat;
+}
+
+.newsletter_heading {
+  padding-top: 10vh;
+}
+
+.newsletter_heading h1 {
+  text-align: center;
+  font-size: 25px;
+  color: var(--white);
+  padding-bottom: 10px;
+}
+
+.newsletter_heading span {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter_heading span a {
+  font-size: 50px;
+  color: var(--white);
+}
+
+.newsletter_heading_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.newsletter_heading_btn a {
+  padding: 7px 20px;
+  border: 1px solid var(--white);
+  color: var(--white) !important;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 575px) {
+  .newsletter_heading span a {
+    font-size: 30px;
+  }
+  .newsletter_heading h1 {
+    font-size: 20px;
+  }
+}
+/* Newsletter End */
